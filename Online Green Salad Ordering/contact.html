@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online green salad ordering system</title>
+
+    <link rel="stylesheet" href="css/cont.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <style>
+      body{
+    background-image: url("img/4.jpg");
+     background-size: cover; 
+     background-repeat: repeat;
+     background-position: center;
+     height: 500px;
+          }
+    </style>
+  </head>
+
+  <body>
+    <header id="header" style="background-color: beige"></header>
+    
+    <section class="service">
+      <h1 class="gettouch" style="text-align: center;">Get in touch</h1>
+      <div id="service">
+        <div class="box">
+          <!--address-->
+          <i class="fa-solid fa-location-dot"></i>
+          <br />
+          <!--Displaying address-->
+          <p>
+            <h4>Online Green Salad Service Centre</h4>
+            <p>146 yuma street
+              Denver CO 80223</p>
+            <br>
+
+            <h4>Online Green Salad Service Division Office</h4>
+            <p>1270 Automation Drive
+              Windsor, CO 80550</p>
+          </p>
+        </div>
+        <div class="box">
+          <!--phone-->
+          <i class="fa-solid fa-phone"></i>
+          <br />
+          <!--Displaying text-->
+          <p>
+            <h4>You can Call us:</h4>
+              <p>    phno:5524695</p>
+              <br>
+              <h4>Our 24/7 service Team</h4>
+                <p>
+                      phno:55246952
+                 
+                 
+                </p>
+                <br>
+                  <h4>Head office</h4>
+                    phone_number:55246952
+                    phone_number:55287966
+          </p>
+        </div>
+        <div class="box">
+          <!--address-->
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <br />
+          <!--Displaying email-->
+          <p>
+            <h5>Contact us through Email</h2>
+             <p>onlinegreensalad@gmail.com</p>  
+          </p>
+          
+        </div>
+
+      <div class="box">
+        <!--address-->
+      
+        
+        <!--Displaying email-->
+        <form id="formcontent">
+          
+          <h3>Message</h3>
+          <br>
+              <p>
+                <label>Enter your Message</label> 
+                <textarea name="text" rows="3" id="message" required></textarea>
+              </p>
+              <br>
+              <button type="submit">Submit</button>
+        </form>
+          
+      </div>
+      </div>
+    </section>
+    
+    <script>
+      $(document).ready(function () {
+        $(header).load("headfile.html");
+        $(footer).load("footerfile.html");
+      });
+    </script>
+    <footer id="footer">
+
+    </footer>
+  </body>
+</html>
+
