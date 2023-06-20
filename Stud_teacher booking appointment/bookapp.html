@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="std.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("headstd.html");
+      });
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="appointmentform">
+      <div id="book-appointment">
+        <h2>Book Appointment</h2>
+        <form id="book-appointment-form">
+          <label for="teacher">Teacher:</label>
+          <select name="teacher" id="teacher">
+            <option value="">Select a teacher</option>
+            <option value="teacher1">Shaggy</option>
+            <option value="teacher2">Shreya</option>
+            <option value="teacher3">Teena</option>
+            <option value="teacher4">Milan</option>
+            <option value="teacher5">Almas</option>
+          </select>
+<br>
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" required /><br>
+          <label for="time">Time:</label>
+          <input type="time" name="time" id="time" required /><br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required /><br>
+        </form>
+        <br>
+        <button type="submit" onclick="book()">Book Appointment</button>
+      </div>
+    </div>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    function book() {
+      document.getElementById("demo").innerHTML = "Your Appointment is booked";
+      document.getElementById("demo").style.fontSize="40px";
+      document.getElementById("demo").style.color="white";
+    }
+  </script>
+</html>

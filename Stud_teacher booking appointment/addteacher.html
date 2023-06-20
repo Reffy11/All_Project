@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+       td, th{
+       
+       border: 1px solid black;
+   }
+   table{
+      border: 1px solid black;
+   }
+th{
+  font-size: 30px;
+  color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("headerfile.html");
+      });
+  
+    </script>
+
+    <h2>Add Teacher</h2>
+    <div class="container">
+    <form id="contactForm" action="" method="get">
+        <!-- <div class="alert">Your message sent</div> -->
+        
+      <table>
+        <tr>
+          <th>Name</th>
+          <td><input type="name" id="name" required /></td>
+        </tr>
+
+        <tr>
+            <th>Department</th>
+            <td><input type="dept" id="dept" required /></td>
+          </tr>
+
+          <tr>
+            <th>Subject</th>
+            <td><input type="subject" id="subject" required /></td>
+          </tr>
+
+          <tr>
+            <th>Email</th>
+            <td><input type="email" id="email" required /></td>
+          </tr>
+
+          <tr>
+            <th>Password</th>
+            <td><input type="password" id="password" required /></td>
+          </tr>
+      </table>
+      <br>
+      <button  id="click" value="submit" type="submit">Submit</button>
+    </form>
+      
+   
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>

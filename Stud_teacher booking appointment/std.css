@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    background-image: url("assets/images/2148721266.jpg");
+    background-size: cover;
+}
+div{
+    padding: 4px;
+    font-style: normal;
+    font-weight: 600;
+    
+    }
+    #root{
+        padding-top: 30px;
+        font-style: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: beige;
+        text-align: left;
+    }
+    label,input{
+       
+        font-size: 20px;
+    }
+    input:hover{
+        border: 2px solid darkgreen;
+    }
+    #book-appointment-form{
+        font-size: 30px;
+        color: darkred;
+    }
+    button{
+        font-size: 30px;
+        color: darkgoldenrod;
+        background-color: brown;
+    }
+
+    #form1{
+        font-size: 30px;
+        color: rgb(7, 39, 70);
+        text-align: center;
+    }
+    
+    #btn5{
+        font-size: 30px;
+        color: rgb(49, 40, 15);
+        background-color: rgb(92, 213, 235);
+    }
+    h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    
